@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Camarko</title>
+  <!--tab icon-->
+  <link rel="icon" href="images/logo.png">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--linking cdn bootsrap 4.3.1-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!--font awesome for icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--linking google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta|Orbitron&display=swap" rel="stylesheet">
+  
+  <!--custom css-->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!--navbar start-->
+<section>
+    <h6>new section</h6>
+<nav class="navbar navbar-expand-lg navbar-light bg-white " style="opacity: 0.9;">
+    <section class="container">
+        <h6>container</h6>
+            <a class="navbar-brand company" href="#">
+            <img id="logo" src="images/logo.png" alt="myLogo">
+           Photography
+            </a>
+            <!--toggle button after shrink-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <section class="collapse navbar-collapse" id="navbarResponsive">
+                <h6>collapsable navbar</h6>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                            <a class="nav-link" href="#portrait">Portrait</a>
+                    </li>
+                    <li class="nav-item">
+                             <a class="nav-link" href="#landscape">Landscape</a>
+                    </li>
+                    <li class="nav-item">
+                             <a class="nav-link" href="#street">Street</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#longexp">longexposure</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social">Contact</a>
+                    </li>
+            </ul>
+                        
+            </section>
+  </section>
+</nav>
+</section>
+<!--end of navigation bar-->
+<!-- Single hero unit-->
+<section id="cover" style="position: relative;text-align: center;color:white;">
+       <h6> background video</h6>
+
+        <video autoplay loop muted>
+                <source src="images/intro.mp4" type="video/mp4">
+                
+              </video>
+
+        <blockquote class="blockquote text-center" id="quote">
+                <p class=""><i class="fas fa-quote-left"></i>   Good better best ,
+                    Never let it rest 
+                    Until your good is better
+                    And your better is best   <i class="fas fa-quote-right"></i></p>
+                <footer class="blockquote-footer">anonymous</footer>
+                
+        </blockquote>
+        
+</section>
+<!--hire me-->
+<section class="container">
+        <h6>hire me button</h6>
+            <button type="button" class="hireme" data-toggle="modal" data-target="#hiremodal">Hire me!</button>
+        <!-- The Modal -->
+        <section class="modal fade" id="hiremodal">
+                <h6>section header</h6>
+                <section class="modal-dialog modal-dialog-centered">
+                    <h6>section header</h6>
+                    <section class="modal-content">
+                        <h6>section header</h6>
+                    
+                    <!-- Modal Header -->
+                    <section class="modal-header">
+                        <h6>section header</h6>
+                        <img id="logofoot" src="images/logo.png" alt="myLogo">
+                        <h4 class="modal-title">Fill & submit</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </section>
+                    
+                    <!-- Modal body -->
+                    <section class="modal-body">
+                        <h6>section header</h6>
+                        <!--modal form-->
+                        <form>
+                                <section class="form-group">
+                                  <label for="InputEmail">Email address</label>
+                                  <input type="email" class="form-control" placeholder="Enter email">
+                                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </section>
+                                <section class="form-group">
+                                  <label for="InputContactnumber">Contact Number</label>
+                                  <input type="text" name="country_code" pattern="[1-9]{1}[0-9]{9}" placeholder="Contact Number">
+                                </section>
+                                <section class="form-check">
+                                  <input type="checkbox" class="form-check-input">
+                                  <label class="form-check-label" for="exampleCheck1">All the above informations are correct</label>
+                                </section>
+                                <section>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Any Additional Messages"></textarea>
+                                </section>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </form>
+                        <!--end of form-->
+                    </section>
+                    
+                    <!-- Modal footer -->
+                    <section class="modal-footer"><h6>section header</h6>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </section>
+                    
+                    </section>
+                </section>
+        </section><!--end of modal-->
+
+</section>
+<!--ends-->
+<!--modal-->
+
+<!-- Page Content -->
+<section class="container">
+     <h6>new section</h6>
+  <h1 class="mt-4">What do you mean by Photograph?</h1>
+  <p>A photograph is an image that is recorded that the human eye can perceive. 
+      Main Purpose of a photographs is to capture life moments. Moments of happiness,
+       fun, friendship, etc. We would like those moments to last,
+       to remember them and to share them with others....</p>
+</section>
+<!-- /.container -->
+<br><br><br>
+<!--carousel-->
+<section class="container">
+        <h6>new section</h6>
+    <h1 class="greeting">Welcome to <span class="company">Camarko Photography</span></h1>
+
+</section>
+<br><br>
+<!--instagram feed-->
+
+    <section class="container tab-pane"><h6>new section</h6>
+      <h3 style="text-align: center;"><a href="https://www.instagram.com/thebarcaboyy/" class="fa fa-instagram"></a>
+          Instagram Feed</h3>
+        <!--album section-->
+        <section class="container"><h6>new section</h6>
+            <!--first row-->
+            <section class="row"><h6>new section</h6>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img1.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img2.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img3.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img26.jpg"/>
+                 </section>
+            </section><!--end of first row-->
+            <br>
+            <!--second row-->
+            <section class="row">
+                    
+                    <section class="col-sm-3"><h6>new section</h6>
+                            <img class="galleryimage" alt="image" src="images/random/img12.jpg"/>
+                    </section>
+                    <section class="col-sm-3"><h6>new section</h6>
+                            <img class="galleryimage" alt="image" src="images/random/img6.jpg"/>
+                    </section>
+                    <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img13.jpg"/>
+                    </section>
+                    <section class="col-sm-3"><h6>new section</h6>
+                            <img class="galleryimage" alt="image" src="images/random/img15.jpg"/>
+                    </section>
+                </section><!--end of second row--><br>
+            <!--third row-->
+            <section class="row"><h6>new section</h6>
+                    
+                    <section class="col-sm-3"><h6>new section</h6>
+                            <img class="galleryimage" alt="image" src="images/random/img9.jpg"/>
+                    </section>
+                    <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img10.jpg"/>
+                    </section>
+                    <section class="col-sm-3"><h6>new section</h6>
+                            <img class="galleryimage" alt="image" src="images/random/img5.jpg"/>
+                    </section>
+                    <section class="col-sm-3"><h6>new section</h6>
+                            <img class="galleryimage" alt="image"  src="images/random/img8.jpg"/>
+                    </section>
+                </section><!--end of third row--><br>
+            <!--fourth row-->
+            <section class="row"><h6>new section</h6>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img7.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img19.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img23.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image"  src="images/random/img31.jpg"/>
+                </section>
+                </section><!--end of fourth row--><br>
+                <!--fifth row-->
+            <section class="row"><h6>new section</h6>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img11.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img18.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img14.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image"  src="images/random/img21.jpg"/>
+                </section>
+                </section><!--end of fifth row--><br>
+                <!--sixth row-->
+            <section class="row"><h6>new section</h6>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img16.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img22.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img17.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image"  src="images/random/img20.jpg"/>
+                </section>
+                </section><!--end of sixth row--><br>
+                <!--seventh row-->
+            <section class="row"><h6>new section</h6>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img25.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img36.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img40.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image"  src="images/random/img4.jpg"/>
+                </section>
+                </section><!--end of seventh row--><br>
+                <!--eight row-->
+            <section class="row"><h6>new section</h6>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img33.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img34.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img39.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image"  src="images/random/img32.jpg"/>
+                </section>
+                </section><!--end of eight row--><br>
+                <!--ninth row-->
+            <section class="row"><h6>new section</h6>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img29.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img37.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img35.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image"  src="images/random/img38.jpg"/>
+                </section>
+                </section><!--end of ninth row--><br>
+                <!--tenth row-->
+            <section class="row"><h6>new section</h6>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img24.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                    <img class="galleryimage" alt="image" src="images/random/img27.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image" src="images/random/img28.jpg"/>
+                </section>
+                <section class="col-sm-3"><h6>new section</h6>
+                        <img class="galleryimage" alt="image"  src="images/random/img30.jpg"/>
+                </section>
+                </section><!--end of tenth row--><br>
+        </section><!--end of container-->
+
+    </section><!--end of container tab-pan-->
+
+
+
+<!--end of instagram feed-->
+<br><br><br>
+<!--slide show with carousel-->
+<section id="mycarouselIndicators" class="carousel slide" data-ride="carousel">
+        <h6>new section</h6>
+        <ol class="carousel-indicators">
+          <li data-target="#mycarouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#mycarouselIndicators" data-slide-to="1"></li>
+          <li data-target="#mycarouselIndicators" data-slide-to="2"></li>
+          <li data-target="#mycarouselIndicators" data-slide-to="3"></li>
+          
+        </ol><!--end of indicator-->
+        <section class="carousel-inner"><!--carousel items-->
+            <h6>new section</h6>
+            <section class="carousel-item active" ><h6>new section</h6>
+                <img class="d-block w-100" src="images/portrait1.jpg" alt="First slide">
+            </section>
+            <section class="carousel-item"><h6>new section</h6>
+                <img class="d-block w-100" src="images/background.jpg" alt="Second slide">
+            </section>
+            <section class="carousel-item"><h6>new section</h6>
+                <img class="d-block w-100" src="images/horintal1.JPG" alt="Third slide">
+            </section>
+            
+            <section class="carousel-item"><h6>new section</h6>
+                    <img class="d-block w-100" src="images/streethor3.jpg" alt="Fourth slide">
+            </section>
+        </section>
+        <a class="carousel-control-prev" href="#mycarouselIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mycarouselIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </section>
+
+
+
+
+<!--end of carousel-->
+
+<br><br>
+<!--photo tile-->
+<section class="container-fluid"><h6>new section</h6>
+    <section class="row"><h6>new section</h6>
+         
+         <section id="portrait" class="col-sm-3 no-gutter" data-toggle="collapse" data-target="#portraitgallery" aria-expanded="false" aria-controls="collapseExample"><h6>new section</h6>
+             <img class="gallerytab" alt="image" src="images/portrait/tab.jpeg"/>
+             <h2 class="overlay">Portrait <i class="fas fa-plus-circle"></i></h2>
+         </section>
+         <section id="street" class="col-sm-3 no-gutter" data-toggle="collapse" data-target="#streetgallery" aria-expanded="false" aria-controls="collapseExample"><h6>new section</h6>
+                <img class="gallerytab" alt="image"  src="images/street/tab.jpg"/>
+                <h2 class="overlay">Street <i class="fas fa-plus-circle"></i></h2>
+        </section>
+        <section id="landscape" class="col-sm-3 no-gutter"data-toggle="collapse" data-target="#landscapegallery" aria-expanded="false" aria-controls="collapseExample"><h6>new section</h6>
+                <img class="gallerytab" alt="image"  src="images/landscape/tab.jpg"/>
+                <h2 class="overlay">Landscape <i class="fas fa-plus-circle"></i></h2>
+        </section>
+        <section id="longexp" class="col-sm-3 no-gutter"data-toggle="collapse" data-target="#longexpgallery" aria-expanded="false" aria-controls="collapseExample"><h6>new section</h6>
+                <img class="gallerytab" alt="image" src="images/longexp/tab.jpg"/>
+                <h2 class="overlay">long Exposure <i class="fas fa-plus-circle"></i></h2>
+        </section>    
+    </section>
+    <!--album contents-->
+    <section class="collapse " id="portraitgallery"><h6>new section</h6>
+            <section class="container tab-pane"><h6>new section</h6>
+              <h3>Portrait Photography</h3>
+                <p>Portrait photography or portraiture in photography is a photograph of a 
+                    person or group of people that captures the personality of the subject 
+                    by using effective lighting, backdrops, and poses. A portrait picture might be artistic,
+                     or it might be clinical, as part of a medical study. Frequently, portraits are commissioned 
+                     for special occasions, such as weddings or school events.Portraits can serve many purposes, 
+                    from usage on a personal Web site to display in the lobby of a business.</p>
+                <!--album section-->
+                <section class="container"><h6>new section</h6>
+                    <!--first row-->
+                    <section class="row"><h6>new section</h6>
+                        <section class="col-sm-4"><h6>new section</h6>
+                                <img class="galleryimage" alt="image" src="images/portrait/img1.jpg"/>
+                        </section>
+                        <section class="col-sm-4"><h6>new section</h6>
+                                <img class="galleryimage" alt="image" src="images/portrait/img2.jpg"/>
+                        </section>
+                        <section class="col-sm-4"><h6>new section</h6>
+                                <img class="galleryimage" alt="image" src="images/portrait/img3.jpg"/>
+                        </section>
+                    </section><!--end of first row-->
+                    <!--second row-->
+                    <section class="row">
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/portrait/img4.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/portrait/img5.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/portrait/img6.jpg"/>
+                            </section>
+                        </section><!--end of second row-->
+                    <!--third row-->
+                    <section class="row"><h6>new section</h6>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/portrait/img7.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/portrait/img8.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/portrait/img9.jpg"/>
+                            </section>
+                        </section><!--end of third row-->
+                    <!--fourth row-->
+                    <section class="row"><h6>new section</h6>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/portrait/img10.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/portrait/img11.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image"  src="images/portrait/img12.jpg"/>
+                            </section>
+                        </section><!--end of fourth row-->
+                </section><!--end of container-->
+
+            </section><!--end of container tab-pan-->
+    </section><!--end of portrait album-->
+
+    <section class="collapse" id="streetgallery"><h6>new section</h6>
+            <section class="container tab-pane"><h6>new section</h6>
+              <h3>Street Photography</h3>
+                <p>Street photography, also sometimes called candid photography, 
+                    is photography conducted for art or enquiry that features
+                     unmediated chance encounters and random incidents within public places.
+                      Although there is a difference between street and candid photography,
+                       it is usually subtle with most street photography being candid in nature
+                        and some candid photography being classifiable as street photography.
+                         Street photography does not necessitate the presence of a street or even 
+                         the urban environment. Though people usually feature directly, 
+                         street photography might be absent of people 
+                         and can be of an object or environment where the 
+                    image projects a decidedly human character in facsimile or aesthetic</p>
+                  <!--album section-->
+                  <section class="container"><h6>new section</h6>
+                        <!--first row-->
+                        <section class="row"><h6>new section</h6>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image"  src="images/street/img1.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/street/img2.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/street/img3.jpg"/>
+                            </section>
+                        </section><!--end of first row-->
+                        <!--second row-->
+                        <section class="row"><h6>new section</h6>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image"  src="images/street/img4.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/street/img5.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/street/img6.jpg"/>
+                                </section>
+                            </section><!--end of second row-->
+                        <!--third row-->
+                        <section class="row"><h6>new section</h6>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/street/img7.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/street/img8.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/street/img9.jpg"/>
+                                </section>
+                            </section><!--end of third row-->
+                        <!--fourth row-->
+                        <section class="row"><h6>new section</h6>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/street/img10.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/street/img11.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/street/img12.jpg"/>
+                                </section>
+                            </section><!--end of fourth row-->
+                    </section><!--end of container-->
+            </section>
+    </section>
+    <section class="collapse" id="landscapegallery"><h6>new section</h6>
+            <section class="container tab-pane"><h6>new section</h6>
+             <h3>Landscape photography</h3>
+             <p>Landscape photography shows spaces within the world, sometimes vast and unending, 
+                 but other times microscopic. Landscape photographs typically capture the presence                  
+                 of nature but can also focus on man-made features or disturbances of landscapes. 
+                 Landscape photography is done for a variety of reasons. Perhaps the most common is to 
+                 recall a personal observation or experience while in the outdoors, especially when traveling.
+                  Others pursue it particularly as an outdoor lifestyle, 
+                 to be involved with nature and the elements, some as an escape from the artificial world.</p>
+                 <!--album section-->
+                 <section class="container"><h6>new section</h6>
+                        <!--first row-->
+                        <section class="row"><h6>new section</h6>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/landscape/img1.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/landscape/img2.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/landscape/img3.jpg"/>
+                            </section>
+                        </section><!--end of first row-->
+                        <!--second row-->
+                        <section class="row"><h6>new section</h6>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/landscape/img4.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/landscape/img5.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/landscape/img6.jpg"/>
+                                </section>
+                            </section><!--end of second row-->
+                        <!--third row-->
+                        <section class="row"><h6>new section</h6>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/landscape/img7.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/landscape/img8.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/landscape/img9.jpg"/>
+                                </section>
+                            </section><!--end of third row-->
+                        <!--fourth row-->
+                        <section class="row"><h6>new section</h6>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage"alt="image"  src="images/landscape/img10.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/landscape/img11.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/landscape/img12.jpg"/>
+                                </section>
+                            </section><!--end of fourth row-->
+                    </section><!--end of container-->
+            </section>
+    </section>
+    <section class="collapse" id="longexpgallery"><h6>new section</h6>
+            <section class="container tab-pane"><h6>new section</h6>
+             <h3>Long Exposure Photography</h3>
+             <p>Long exposure photography is when we are using a much longer shutter speed, 
+                 and it's usually used as a specific technique to achieve a certain effect.
+                  There's no defined transition point at which a shutter speed becomes slow 
+                 enough to define your shooting as 'long exposure photography'.</p>
+                 <!--album section-->
+                 <section class="container"><h6>new section</h6>
+                        <!--first row-->
+                        <section class="row"><h6>new section</h6>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/longexp/img1.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/longexp/img2.jpg"/>
+                            </section>
+                            <section class="col-sm-4"><h6>new section</h6>
+                                    <img class="galleryimage" alt="image" src="images/longexp/img3.jpg"/>
+                            </section>
+                        </section><!--end of first row-->
+                        <!--second row-->
+                        <section class="row"><h6>new section</h6>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/longexp/img4.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/longexp/img5.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/longexp/img6.jpg"/>
+                                </section>
+                            </section><!--end of second row-->
+                        <!--third row-->
+                        <section class="row"><h6>new section</h6>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage"alt="image"  src="images/longexp/img7.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage"alt="image"  src="images/longexp/img8.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/longexp/img9.jpg"/>
+                                </section>
+                            </section><!--end of third row-->
+                        <!--fourth row-->
+                        <section class="row"><h6>new section</h6>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/longexp/img10.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/longexp/img11.jpg"/>
+                                </section>
+                                <section class="col-sm-4"><h6>new section</h6>
+                                        <img class="galleryimage" alt="image" src="images/longexp/img12.jpg"/>
+                                </section>
+                            </section><!--end of fourth row-->
+                    </section><!--end of container-->
+            </section>
+    </section>
+
+
+</section>
+<!--grid of legendary photographers-->
+<br><br>
+<section class="container"><h6>new section</h6>
+    <h1 style="text-align: center;">My Inspirations</h1>
+    <br><br>
+      <section class="row" id ="grid"><h6>new section</h6>
+            <section class="col-sm-4 "><h6>new section</h6>
+              <img class="grid3img" alt="image" src="images/photographer1.jpg">
+            <a href="https://en.wikipedia.org/wiki/Richard_Avedon">  
+                <h2>Richard Avedon</h2>
+            </a>
+                <p>Richard Avedon was an American fashion and portrait photographer.
+                     His iconic portraits of celebrities, spanned more than half of the 20th century,
+                      and included Marilyn Monroe, 
+                    Audrey Hepburn, The Beatles, Andy Warhol, and Tupac Shakur.
+                  An obituary published in The New York Times said that 
+                  "his fashion and portrait photographs helped define America's image of style,
+                   beauty and culture for the last half-century".</p>
+                   <blockquote class="blockquote text-center">
+                        <p class="mb-0"><i class="fas fa-quote-left"></i> My portraits are more about me 
+                            than they are about the people I photograph.   <i class="fas fa-quote-right"></i></p>
+                        <footer class="blockquote-footer">Richard Avedon </footer>
+                    </blockquote>
+            </section>
+           
+            <section class="col-sm-4 "><h6>new section</h6>
+                    <img class="grid3img" alt="image" src="images/photographer2.jpg">
+                  <a href="https://en.wikipedia.org/wiki/Henri_Cartier-Bresson">  
+                      <h2>Henri Cartier-Bresson</h2>
+                  </a>
+                      <p>Henri Cartier-Bresson was a French humanist photographer considered a master of 
+                          candid photography, and an early user of 35 mm film. 
+                          He pioneered the genre of street photography, and viewed photography as capturing a decisive moment. 
+                          Cartier-Bresson was one of the founding members of Magnum Photos in 1947.</p>
+                          <br><br><br>
+                          <blockquote class="blockquote text-center">
+                                <p class="mb-0"><i class="fas fa-quote-left"></i> In photography, 
+                                    the smallest thing can be a great subject. The little, 
+                                    human detail can become a Leitmotiv.   <i class="fas fa-quote-right"></i></p>
+                                <footer class="blockquote-footer">Henri Cartier-Bresson </footer>
+                            </blockquote>
+            </section>
+            <section class="col-sm-4 " id="change"><h6>new section</h6>
+                    <img class="grid3img" alt="image" src="images/photographer3.jpg">
+                  <a href="https://en.wikipedia.org/wiki/Ansel_Adams">  
+                      <h2>Ansel Adams</h2>
+                  </a>
+                      <p>Ansel Easton Adams was a landscape photographer and environmentalist
+                           known for his black-and-white 
+                          images of the American West. He helped found Group f/64, 
+                          an association of photographers advocating "pure" 
+                          photography which favored sharp focus and the use of the 
+                          full tonal range of a photograph.</p>
+                          <br><br><br>
+                          <blockquote class="blockquote text-center">
+                                <p class="mb-0"><i class="fas fa-quote-left"></i> When words become unclear, 
+                                    I shall focus with photographs.
+                                     When images become inadequate, I shall be content with silence. 
+                                       <i class="fas fa-quote-right"></i></p>
+                                <footer class="blockquote-footer">Ansel Adams </footer>
+                        </blockquote>
+            </section>
+      </section>
+</section>
+
+
+<!--end of griding-->
+<br><br>
+
+<!--what i use to capture photos-->
+
+<section class="container" id="equip">
+        <h3 style="text-align: center;">My Equipments</h3>
+    <h6>equipments</h6>
+        <section class="row"><!--camera row-->
+            <h6>cameras</h6>
+            <section class="col-sm-6">
+                <h6>nikon</h6>
+                <img class="galleryimage" src="images/equipments/camera.jpg" alt="camera">Nikon D5300
+            </section>
+            <section class="col-sm-6">
+                    <h6>mobile</h6>
+                    <img class="galleryimage" src="images/equipments/poco.jpg" alt="camera">Poco F1
+                </section>
+        </section>
+        <section class="row"><!--lens row-->
+            <h6>lens</h6>
+            <section class="col-sm-6">
+                <h6>nikon</h6>
+                <img class="galleryimage" src="images/equipments/lens35.jpg" alt="lens1">Nikkor 35mm 1.8G
+            </section>
+            <section class="col-sm-6">
+                    <h6>nikon</h6>
+                    <img class="galleryimage" src="images/equipments/lens140.jpg" alt="lens2">Nikkor 18-140mm
+                </section>
+        </section>
+        <section class="row"><!--tripod row-->
+            <h6>yunten</h6>
+            <section class="col-sm-6">
+                <h6>yunteng</h6>
+                <img class="galleryimage" src="images/equipments/tripod.jpg" alt="tripod1">Yunteng tripod
+            </section>
+            <section class="col-sm-6">
+                    <h6>gorilla</h6>
+                    <img class="galleryimage" src="images/equipments/gorilla.jpg" alt="tripod2">Gorilla Pod
+                </section>
+        </section>
+
+</section>
+<!--end of equipments-->
+
+<!--footer-->
+<br><br>
+    <section class="container" style="text-align: center;" id="social"><h6>new section</h6>
+            <h1>Show some <i class="fas fa-heart"></i></h1>
+            
+            <section class="social">
+                <h6>social icons</h6>
+            <a href="https://www.facebook.com/arkoprobho.pal.7" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/Arkoprobho_Pal" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/thebarcaboyy/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/arkoprobhopal/" class="fa fa-linkedin"></a>
+            </section>
+
+
+            <br>
+           
+    <section class="container" style="text-align: center;">
+        <h6>myimage</h6>
+        <img src="images/myimage.jpg" alt="myimage" class="myimage">
+    </section>
+    <br><br>
+    </section>
+
+
+        <section class="jumbotron text-center" style="margin-bottom:0">
+            <h6>footer</h6>
+                <a class="navbar-brand companyfooter" href="#">
+                    <span style="font-size:15px;color:black;">Copyright &copy</span>
+                        <img id="logofoot" src="images/logo.png" alt="myLogo"> Photography
+                        </a>
+                    <h5>All rights reserved 2019</h5>
+        </section>
+<!--end of footer-->
+</body>
+</html>
